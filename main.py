@@ -37,6 +37,7 @@ while game_is_on:
     if player.ycor() > road.other_side_y + 20:
         score.increasse()
         player.refresh()
+        cars.speedup()
     
 screen.exitonclick()
 
