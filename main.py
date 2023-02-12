@@ -3,6 +3,7 @@ from turtle import Screen
 from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
+from road import Road
 
 screen = Screen()
 screen.setup(width=600, height=600)
@@ -11,6 +12,7 @@ screen.colormode(255)
 
 player = Player()
 cars = CarManager()
+road = Road()
 
 screen.listen()
 screen.onkeypress(player.move_forward, "w") #dont pass () to the function or it calls itself
