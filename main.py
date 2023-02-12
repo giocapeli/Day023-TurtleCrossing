@@ -13,6 +13,7 @@ screen.colormode(255)
 player = Player()
 cars = CarManager()
 road = Road()
+score = Scoreboard()
 
 screen.listen()
 screen.onkeypress(player.move_forward, "w") #dont pass () to the function or it calls itself
@@ -31,6 +32,11 @@ while game_is_on:
     for car in cars.all_cars:
         if player.distance(car) <= 20:
             game_is_on = False
+            score.game_over()
+    
+    if player.ycor() > road.other_side_y + 20:
+        score.increasse()
+        player.refresh()
     
 screen.exitonclick()
 

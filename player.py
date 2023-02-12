@@ -13,8 +13,7 @@ class Player(Turtle):
         self.shape("turtle")
         self.setheading(90)
         self.color("green")
-        self.goto(0, -250)
-        self.position_x = 0
+        self.refresh()
 
     def move_forward(self):
         self.forward(MOVE_DISTANCE)
@@ -29,3 +28,7 @@ class Player(Turtle):
     def move_left(self):
         self.position_x -= MOVE_DISTANCE
         self.goto(self.position_x, self.ycor())
+
+    def refresh(self):
+        self.goto(0, -250)
+        self.position_x = 0
