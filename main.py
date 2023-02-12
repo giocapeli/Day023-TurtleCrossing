@@ -26,5 +26,9 @@ while game_is_on:
     cars.create_car()
     cars.move()
     
+    for car in cars.all_cars:
+        if player.distance(car) <= 20:
+            game_is_on = False
+    
 screen.exitonclick()
 

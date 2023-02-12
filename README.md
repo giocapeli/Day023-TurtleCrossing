@@ -5,9 +5,9 @@
 
 ## - [x] Move the turtle with keypress
 
-## - [ ] Create and move the cars
+## - [x] Create and move the cars
 
-## - [ ] Detect collision with car
+## - [x] Detect collision with car
 
 ## - [ ] Detect when turtle reaches the other side of the road
 
