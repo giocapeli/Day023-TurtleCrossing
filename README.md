@@ -3,12 +3,12 @@
 
 # Steps:
 
-- [ ] Move the turtle with keypress
+## - [x] Move the turtle with keypress
 
-## Create and move the cars
+## - [ ] Create and move the cars
 
-## Detect collision with car
+## - [ ] Detect collision with car
 
-## Detect when turtle reaches the other side of the road
+## - [ ] Detect when turtle reaches the other side of the road
 
-## Create a scoreboard
+## - [ ] Create a scoreboard
