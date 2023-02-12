@@ -30,5 +30,5 @@ class Player(Turtle):
         self.goto(self.position_x, self.ycor())
 
     def refresh(self):
-        self.goto(0, -250)
+        self.goto(0, -260)
         self.position_x = 0
